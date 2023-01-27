@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Planet from './Components/Planet';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const Tatooine = '/planets/1/';
+    const Alderaan = '/planets/2/';
+
+    return (
+        <div className="App">
+            <Planet endpoint={Tatooine} />
+            <Planet endpoint={Alderaan} />
+        </div>
+    );
 }
 
 export default App;
