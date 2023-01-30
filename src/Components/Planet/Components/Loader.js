@@ -27,5 +27,5 @@ const Spinner = styled.span`
 `;
 
 export default function Loader() {
-    return <LoaderWrapper><Spinner></Spinner></LoaderWrapper>
+    return <LoaderWrapper><Spinner data-testid="loader"></Spinner></LoaderWrapper>
 }
